@@ -49,9 +49,7 @@ const Feature = () => {
               fontSize="xl"
               mx={{ lg: "auto" }}
               color={useColorModeValue("gray.500", "gray.400")}
-            >
-              <ComponentDemo path={card} />
-            </chakra.p>
+            ></chakra.p>
           </Box>
         </Box>
       </Box>

@@ -7,6 +7,7 @@ import { ChakraProvider } from "@chakra-ui/react";
 import { ThemeProvider } from "theme/context";
 import { useEffect, useMemo, useState } from "react";
 import NextNprogress from "nextjs-progressbar";
+import { StepsStyleConfig as Steps } from "chakra-ui-steps";
 
 const choc = {
   bg: "#15151E",
@@ -28,6 +29,7 @@ const Theme = (props: any) => {
     layerStyles,
     styles,
     fonts,
+    Steps,
   };
   const theme = extendTheme(overrides);
 

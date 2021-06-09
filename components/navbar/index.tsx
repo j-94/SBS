@@ -57,7 +57,7 @@ const HeaderContent = () => {
           <NextLink href="/" passHref>
             <Box cursor="pointer">
               <Logo />
-              <chakra.span
+              {/* <chakra.span
                 fontSize="1.3rem"
                 fontFamily="heading"
                 fontWeight="bold"
@@ -68,10 +68,10 @@ const HeaderContent = () => {
                   color={useColorModeValue("brand.500", "brand.400")}
                   letterSpacing="widest"
                 >
-                  Choc
+                  Surrey
                 </chakra.span>{" "}
-                UI
-              </chakra.span>
+                Build
+              </chakra.span> */}
             </Box>
           </NextLink>
         </Flex>

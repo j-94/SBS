@@ -13,30 +13,17 @@ export default function Credits() {
         mt="16"
         mb={3}
       >
-        Proudly developed in{" "}
-        <Icon viewBox="0 0 6 3" boxSize={4}>
-          <rect width="6" height="4" fill="#008751" />
-          <rect x="2" width="2" height="4" fill="#FFF" />
-        </Icon>{" "}
-        by{" "}
+        Proudly developed in Surrey by{" "}
         <Link
           isExternal
           rel="noreferrer"
           href={process.env.twitterUrl}
           aria-label="Anuoluwapo Abraham"
         >
-          Anuoluwapo Abraham
+          Surrey.Build
         </Link>
       </Text>
       <HStack spacing={4}>
-        <Link
-          isExternal
-          rel="noreferrer"
-          href={process.env.githubUrl}
-          aria-label="Github Repo"
-        >
-          <Icon as={FaGithub} boxSize={4} />
-        </Link>
         <Link
           isExternal
           rel="noreferrer"
