@@ -1,16 +1,12 @@
 import Image from "next/image";
-import {
-  Box,
-  Center,
-  Heading,
-  Stack,
-  useColorModeValue,
-  ControlBox,
-} from "@chakra-ui/react";
-import servicecard from "components/forms/servicecard";
-export default function ServiceCard() {
+import { Box, Heading, Stack, useColorModeValue } from "@chakra-ui/react";
+
+const ServiceCard = ({
+  address = "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+  name = "build",
+}) => {
   return (
-    <Center py={6}>
+    <Box pt={5}>
       <Box
         as="button"
         transition="all 0.2s cubic-bezier(.08,.52,.52,1)"
@@ -32,20 +28,8 @@ export default function ServiceCard() {
         p={6}
         overflow={"hidden"}
       >
-        <Box
-          h={"210px"}
-          bg={"gray.100"}
-          mt={-6}
-          mx={-6}
-          mb={6}
-          pos={"relative"}
-        >
-          <Image
-            src={
-              "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
-            }
-            layout={"fill"}
-          />
+        <Box mt={-6} mx={-6} mb={6}>
+          <Image src={address} width={700} height={475} />
         </Box>
         <Stack>
           <Heading
@@ -53,11 +37,12 @@ export default function ServiceCard() {
             fontSize={"2xl"}
             fontFamily={"body"}
           >
-            Rennovation
+            {name}
           </Heading>
         </Stack>
       </Box>
-      <ControlBox />
-    </Center>
+    </Box>
   );
-}
+};
+
+export default ServiceCard;

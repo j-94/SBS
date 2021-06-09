@@ -20,7 +20,6 @@ import NextLink from "next/link";
 import Feature1 from "components/landing/feature1";
 import Feature2 from "components/landing/feature2";
 
-import Form from "components/forms/hybridform";
 import ChocoForm from "components/forms/chocoform";
 import { Vertical } from "components/forms/steps";
 import Formikchakra from "components/forms/formikchakrui";
@@ -28,11 +27,10 @@ const Home: NextPage = (props: any) => {
   return (
     <SiteLayout>
       <PageHead title="Build in Surrey" />
+      <ChocoForm />
       <Formikchakra />
       {/* <Feature1 /> */}
-      <Box pt={100}>
-        <Form />
-      </Box>
+      <Box pt={100}></Box>
     </SiteLayout>
   );
 };
