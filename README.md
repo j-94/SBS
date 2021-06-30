@@ -3,8 +3,8 @@
 <div align="center">
 
 [![License](https://img.shields.io/github/license/anubra266/choc-ui.svg?style=for-the-badge)](https://github.com/j-94/sbs/blob/master/LICENSE)
-[![Author](https://img.shields.io/badge/author-@j-94-blue.svg?style=for-the-badge)](https://github.com/j-94)
-[![Made In](https://img.shields.io/badge/made%20in-nigeria-dark.svg?style=for-the-badge)](https://github.com/j-94)
+
+
 
 </div>
 <br />
