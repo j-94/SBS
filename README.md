@@ -2,14 +2,14 @@
  
 <div align="center">
 
-[![License](https://img.shields.io/github/license/anubra266/choc-ui.svg?style=for-the-badge)](https://github.com/anubra266/choc-ui/blob/master/LICENSE)
-[![Author](https://img.shields.io/badge/author-@anubra266-blue.svg?style=for-the-badge)](https://github.com/anubra266)
-[![Made In](https://img.shields.io/badge/made%20in-nigeria-dark.svg?style=for-the-badge)](https://github.com/anubra266)
+[![License](https://img.shields.io/github/license/anubra266/choc-ui.svg?style=for-the-badge)](https://github.com/j-94/sbs/blob/master/LICENSE)
+[![Author](https://img.shields.io/badge/author-@j-94-blue.svg?style=for-the-badge)](https://github.com/j-94)
+[![Made In](https://img.shields.io/badge/made%20in-nigeria-dark.svg?style=for-the-badge)](https://github.com/j-94)
 
 </div>
 <br />
 
-## About Choc UI
+## About SBS
 
 [**CHOC**](https://choc-ui.tech) is _acronym_ for [Chakra](https://chakra-ui.com) Higher Order Components. Choc UI is a collection of components, inspired by many sources of well used web components, which are rebuilt based on the Chakra UI library.
 
