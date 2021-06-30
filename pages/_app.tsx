@@ -12,6 +12,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <Theme>
       <PageHead />
+
       <Component {...pageProps} />
       <SiteSettings />
       <ToTop />

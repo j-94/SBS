@@ -18,7 +18,7 @@ const Element = ({ category, section }) => {
         <PageHead title={ComponentObj?.title} image={ComponentObj?.image} />
         <PageHeader>{ComponentObj?.title}</PageHeader>
         <AdBox />
-        {ComponentObj?.components.map((comp: any) => (
+        {/* {ComponentObj?.components.map((comp: any) => (
           <Section key={comp.preview} id={comp.preview}>
             <Section.Content>
               <ComponentDemo comp={comp} />
@@ -40,7 +40,7 @@ const Element = ({ category, section }) => {
               )}
             </Section.Content>
           </Section>
-        ))}
+        ))} */}
       </React.Fragment>
     </DocsLayout>
   );

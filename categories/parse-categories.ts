@@ -46,7 +46,7 @@ export const useRoutes = () => {
         : [];
       const active =
         router.pathname === url ||
-        (category === prefix.replace(/docs|[/]/g, "") && section === route);
+        (category === prefix.replace(/help|[/]/g, "") && section === route);
       racc.push({
         ...secProps,
         title: secTitle,

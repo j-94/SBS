@@ -5,21 +5,14 @@ import SiteLayout from "components/layouts/site";
 import splitbee from "@splitbee/web";
 import ToTop from "components/to-top";
 
-import ChocoForm from "components/forms/chocoform";
 splitbee.init();
 
-const Build: NextPage = (props: any) => {
+const Design: NextPage = (props: any) => {
   return (
     <SiteLayout>
-      <PageHead title="Build in Surrey" />
-      <ChocoForm />
+      <PageHead title="design in Surrey" />
     </SiteLayout>
   );
 };
 
-// <ChocoForm />
-// <Formikchakra />
-// {/* <Feature1 /> */}
-// <Box pt={100}></Box>
-
-export default Build;
+export default Design;
