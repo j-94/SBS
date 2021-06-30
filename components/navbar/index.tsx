@@ -19,7 +19,13 @@ import {
   BoxProps,
 } from "@chakra-ui/react";
 import { useViewportScroll } from "framer-motion";
-import { FaMoon, FaSun, FaGithub, FaTwitter } from "react-icons/fa";
+import {
+  FaMoon,
+  FaSun,
+  FaInstagram,
+  FaFacebook,
+  FaTwitter,
+} from "react-icons/fa";
 import { IoColorPalette } from "react-icons/io5";
 import SponsorButton from "./sponsor-button";
 import DocSearch from "../doc-search";
@@ -93,7 +99,7 @@ const HeaderContent = () => {
               rel="noreferrer"
               size="md"
               fontSize="lg"
-              aria-label="Choc UI on twitter"
+              aria-label="Surrey Build on twitter"
               variant="ghost"
               color="current"
               icon={<FaTwitter />}
@@ -105,10 +111,10 @@ const HeaderContent = () => {
               rel="noreferrer"
               size="md"
               fontSize="lg"
-              aria-label="Choc UI Discord server"
+              aria-label="Surrey Build on Facebook"
               variant="ghost"
               color="current"
-              icon={DiscordIcon}
+              icon={<FaFacebook />}
             />
             <IconButton
               as="a"
@@ -117,10 +123,10 @@ const HeaderContent = () => {
               rel="noreferrer"
               size="md"
               fontSize="lg"
-              aria-label="Choc UI's Github Repo"
+              aria-label="Surrey Build's Instagram"
               variant="ghost"
               color="current"
-              icon={<FaGithub />}
+              icon={<FaInstagram />}
             />
             <IconButton
               size="md"

@@ -27,7 +27,7 @@
     "framer-motion": "^4.1.9",
     "fuse.js": "^6.4.6",
     "hero-patterns": "^2.1.0",
-    "next": "^10.0.6",
+    "next": "^11.0.1",
     "next-pwa": "^5.2.9",
     "nextjs-progressbar": "^0.0.7",
     "pill-pity": "^0.2.2",

@@ -35,7 +35,7 @@ const SponsorButton = (props: BoxProps) => (
   >
     <Icon as={FaHeart} w="4" h="4" color="red.500" mr="2" />
     <Box as="strong" lineHeight="inherit" fontWeight="semibold">
-      Sponsor
+      Need a website?
     </Box>
   </Box>
 );

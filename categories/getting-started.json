@@ -3,23 +3,45 @@
     "title": "getting started",
     "prefix": "/docs/",
     "sections": {
-      "installation": {
-        "title": "installation",
-        "route": "installation",
+      "design": {
+        "title": "design",
+        "route": "design",
         "components": [
           {
-            "name": "Installation",
+            "name": "design",
             "url": "#",
             "preview": ""
           }
         ]
       },
-      "configuration": {
-        "title": "configuration",
-        "route": "configuration",
+      "build": {
+        "title": "build",
+        "route": "build",
         "components": [
           {
-            "name": "configuration",
+            "name": "build",
+            "url": "#",
+            "preview": ""
+          }
+        ]
+      },
+      "plan": {
+        "title": "plan",
+        "route": "plan",
+        "components": [
+          {
+            "name": "plan",
+            "url": "#",
+            "preview": ""
+          }
+        ]
+      },
+      "develop": {
+        "title": "develop",
+        "route": "develop",
+        "components": [
+          {
+            "name": "develop",
             "url": "#",
             "preview": ""
           }

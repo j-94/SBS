@@ -2,23 +2,15 @@ import { useRouter } from "next/router";
 
 import GStartObj from "categories/getting-started.json";
 import ElementObj from "categories/elements.json";
-import PSectionsObj from "categories/page-sections.json";
-import NavigationObj from "categories/navigation.json";
-import ListsObj from "categories/lists.json";
 import FormsObj from "categories/forms.json";
-import PackagesObj from "categories/packages.json";
 
 export const componentsObj = {
-  ...ElementObj,
-  ...PSectionsObj,
-  ...NavigationObj,
-  ...ListsObj,
   ...FormsObj,
+  ...ElementObj,
 };
 export const categoriesObj = {
   ...GStartObj,
   ...componentsObj,
-  ...PackagesObj,
 };
 
 export const useRoutes = () => {
@@ -46,7 +38,7 @@ export const useRoutes = () => {
         : [];
       const active =
         router.pathname === url ||
-        (category === prefix.replace(/help|[/]/g, "") && section === route);
+        (category === prefix.replace(/docs|[/]/g, "") && section === route);
       racc.push({
         ...secProps,
         title: secTitle,

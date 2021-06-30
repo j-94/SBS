@@ -8,7 +8,7 @@ export const linkStyle = {
 export const PageHeader = (props) => {
   return (
     <Text
-      fontSize="2xl"
+      fontSize="lg"
       mb={2}
       textTransform="capitalize"
       fontWeight="700"
