@@ -1,26 +1,19 @@
-import { NextPage } from "next";
+import React from "react";
 import PageHead from "components/head";
-import SiteLayout from "components/layouts/site";
+import DocsLayout from "components/layouts/docs";
+import { PageHeader } from "components/docs";
 
-import splitbee from "@splitbee/web";
-import ToTop from "components/to-top";
+import { AdBox } from "analytics/ads";
 
-import ChocoForm from "components/forms/chocoform";
-splitbee.init();
-
-const Build: NextPage = (props: any) => {
+const BuildView = () => {
   return (
-    <SiteLayout>
-      <PageHead title="Build in Surrey" />
-      <ChocoForm />
-      sdgasd
-    </SiteLayout>
+    <DocsLayout>
+      <PageHead title="Build" />
+      <PageHeader>Build</PageHeader>
+
+      <AdBox />
+    </DocsLayout>
   );
 };
 
-// <ChocoForm />
-// <Formikchakra />
-// {/* <Feature1 /> */}
-// <Box pt={100}></Box>
-
-export default Build;
+export default BuildView;

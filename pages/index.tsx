@@ -21,7 +21,7 @@ import {
   Flex,
   ButtonGroup,
 } from "@chakra-ui/react";
-import { FaArrowRight } from "react-icons/fa";
+import { BsArrow90DegDown } from "react-icons/bs";
 import { DiGithubBadge } from "react-icons/di";
 import NextLink from "next/link";
 import Feature1 from "components/landing/feature1";
@@ -38,9 +38,11 @@ const Home: NextPage = (props: any) => {
       <PageHead title="Build in Surrey" />
       <Box
         height="100vh"
-        style={{
-          backgroundImage: `url(${"https://res.cloudinary.com/j94/image/upload/o_57/v1623271799/Graph-paper_tw6hkq.svg"})`,
-        }}
+        style={
+          {
+            // backgroundImage: `url(${"https://res.cloudinary.com/j94/image/upload/o_57/v1623271799/Graph-paper_tw6hkq.svg"})`,
+          }
+        }
       >
         <Box
           as="section"
@@ -64,15 +66,23 @@ const Home: NextPage = (props: any) => {
                 mb="16px"
                 lineHeight="1.2"
               >
-                Let's{" "}
+                Homes built with{" "}
                 <Box
                   as="span"
                   bgGradient="linear(to-r, brand.400, brand.600)"
                   bgClip="text"
                 >
-                  Build
+                  ❤
+                </Box>{" "}
+                in
+                <Box
+                  as="span"
+                  bgGradient="linear(to-r, brand.400, brand.600)"
+                  bgClip="text"
+                >
+                  {" "}
+                  Surrey
                 </Box>
-                .Surrey
               </chakra.h1>
 
               <Text
@@ -81,8 +91,15 @@ const Home: NextPage = (props: any) => {
                 fontSize={{ base: "lg", lg: "xl" }}
                 mt="6"
               >
-                Surrey.build is a accessible and reusable building society that
-                are commonly used for building projects in Surrey.
+                We love building homes and we do it all on average{" "}
+                <Box
+                  as="span"
+                  bgGradient="linear(to-r, brand.400, brand.600)"
+                  bgClip="text"
+                >
+                  10%
+                </Box>{" "}
+                cheaper than our competition
               </Text>
 
               <Text
@@ -97,12 +114,13 @@ const Home: NextPage = (props: any) => {
                   bgClip="text"
                 >
                   {" "}
-                  How can we help you today?:
+                  What stage are you at?:
                 </Box>
               </Text>
             </Box>
           </Box>
         </Box>
+
         <CardGrid />
         {/* <Feature1 />
         <Feature2 />

@@ -1,7 +1,7 @@
 {
   "forms": {
     "title": "forms",
-    "prefix": "/docs/forms/",
+    "prefix": "design",
     "sections": {
       "form-layouts": {
         "title": "Form Layouts",

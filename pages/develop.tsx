@@ -1,18 +1,26 @@
-import { NextPage } from "next";
+import React from "react";
 import PageHead from "components/head";
-import SiteLayout from "components/layouts/site";
+import DocsLayout from "components/layouts/docs";
+import { PageHeader } from "components/docs";
 
-import splitbee from "@splitbee/web";
-import ToTop from "components/to-top";
+import { AdBox } from "analytics/ads";
 
-splitbee.init();
-
-const Develop: NextPage = (props: any) => {
+function iframe() {
+  return {
+    __html: '<iframe src="public/Uc8nCBcqLWs/index.html" ></iframe>',
+  };
+}
+const DevelopView = () => {
   return (
-    <SiteLayout>
-      <PageHead title="Develop in Surrey" />
-    </SiteLayout>
+    <DocsLayout>
+      <PageHead title="Develop" />
+      <PageHeader>Develop</PageHeader>
+      <AdBox />
+      <div>
+        <div dangerouslySetInnerHTML={iframe()} />
+      </div>
+    </DocsLayout>
   );
 };
 
-export default Develop;
+export default DevelopView;

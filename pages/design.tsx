@@ -1,18 +1,18 @@
-import { NextPage } from "next";
+import React from "react";
 import PageHead from "components/head";
-import SiteLayout from "components/layouts/site";
+import DocsLayout from "components/layouts/docs";
+import { PageHeader } from "components/docs";
 
-import splitbee from "@splitbee/web";
-import ToTop from "components/to-top";
+import { AdBox } from "analytics/ads";
 
-splitbee.init();
-
-const Design: NextPage = (props: any) => {
+const designView = () => {
   return (
-    <SiteLayout>
-      <PageHead title="design in Surrey" />
-    </SiteLayout>
+    <DocsLayout>
+      <PageHead title="design" />
+      <PageHeader>design</PageHeader>
+      <AdBox />
+    </DocsLayout>
   );
 };
 
-export default Design;
+export default designView;

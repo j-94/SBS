@@ -21,3 +21,11 @@ module.exports = withPWA({
     sponsorLink: "https://patreon.com/anubra266",
   },
 });
+rewrites: async () => {
+  return [
+    {
+      source: "/dir/:customPage",
+      destination: "/dir/:customPage/index.html",
+    }
+  ]
+}
