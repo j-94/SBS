@@ -4,21 +4,19 @@ import DocsLayout from "components/layouts/docs";
 import { PageHeader } from "components/docs";
 
 import { AdBox } from "analytics/ads";
+import IframeResizer from "iframe-resizer-react";
 
-function iframe() {
-  return {
-    __html: '<iframe src="public/Uc8nCBcqLWs/index.html" ></iframe>',
-  };
-}
 const DevelopView = () => {
   return (
     <DocsLayout>
       <PageHead title="Develop" />
       <PageHeader>Develop</PageHeader>
       <AdBox />
-      <div>
-        <div dangerouslySetInnerHTML={iframe()} />
-      </div>
+      <IframeResizer
+        log
+        src="https://test-3o42g415s-jasedgw.vercel.app/?m=Uc8nCBcqLWs"
+        style={{ width: "1px", minWidth: "100%" }}
+      />
     </DocsLayout>
   );
 };
