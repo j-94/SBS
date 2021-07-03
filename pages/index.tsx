@@ -29,13 +29,14 @@ import Feature2 from "components/landing/feature2";
 import OpenSource from "components/landing/open-source";
 import Sponsors from "components/landing/sponsors";
 import CardGrid from "components/landing/cardgrid";
-
 // import graphpaper from './pages/graph-paper.svg';
+import Gallery from "components/gallery";
 
 const Home: NextPage = (props: any) => {
   return (
     <SiteLayout>
       <PageHead title="Build in Surrey" />
+
       <Box
         height="100vh"
         style={

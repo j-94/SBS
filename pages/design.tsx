@@ -10,6 +10,7 @@ const designView = () => {
     <DocsLayout>
       <PageHead title="design" />
       <PageHeader>design</PageHeader>
+
       <AdBox />
     </DocsLayout>
   );

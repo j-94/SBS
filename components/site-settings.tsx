@@ -1,5 +1,5 @@
 import { HomeLink } from "components/home-link";
-import { CopyCode } from "components/copy-code";
+
 import { ThemeToggle } from "components/theme-toggle";
 import { useColorModeValue, Stack } from "@chakra-ui/react";
 import { useRouter } from "next/router";
@@ -30,7 +30,6 @@ export default function Ss() {
         roundedLeft="lg"
         bg={useColorModeValue("white", "gray.700")}
       >
-        <CopyCode />
         <HomeLink />
         <ThemeToggle />
       </Stack>
